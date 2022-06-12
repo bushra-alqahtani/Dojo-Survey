@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>result  </title>
+    <style>
+ .container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+   
+  }
+  input[type=submit] {
+    width:30%;
+    background-color: #7b63b3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right ;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c9a6da;
+  }
+  
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+       
+        <h1>submitted info:</h1>
+        <h3 >Your name: {{name}}</h3>
+        <h3 >Dojo Location:{{location}}</h3>
+        <h3 >Favorate Language:{{language}}</h3>
+        <h3>comment(optional):{{comment}}</h3>
+        <br><br>
+        <input type="submit" value="Submit" >
+        
+    </div>
+</body>
+</html>

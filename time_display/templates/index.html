@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>time </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+    <div class="container">
+       
+    <form action="/result" method="POST">
+      {% csrf_token %}
+        <label for="fname">Your name:</label>
+        <input type="text" id="name" name="name1"><br>
+
+        <label for="location">Dojo Location:</label>
+        <select id="option" name="location">
+            <option value="volvo" name="location">San Jose</option>
+            <option value="saab" name="location">KSA</option>
+            <option value="fiat" name="location">UK</option>
+          </select> <br>
+        
+        <label for="language">Favorate Language:</label>
+        <select id="option" name="language">
+            <option value="volvo" name="language">python</option>
+            <option value="saab" name="language">c++</option>
+            <option value="fiat" name="language" >c</option><br>
+          </select>
+          <label for="comment" name="comment">comment(optional):</label>
+          <textarea id="w3review" name="comment" rows="4" cols="50"> </textarea>
+        <br><br>
+        
+        <input type="submit" value="Submit">
+      </form> 
+    
+</div>
+</body>
+</html>
